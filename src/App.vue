@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
-    <span>app works!</span>
     <Card :players="players"></Card>
     <Footer></Footer>
   </div>
@@ -24,12 +23,12 @@ export default {
             {
                 title: "Judit Polgar",
                 text: "Judit Polgar is widely regarded as the strongest female chess player of all time. She achieved a peak rating of 2735 and earned the title of Grandmaster in 1991. At the height of her career, Polgar made her way onto several top 10 lists of best active chess players � male or female",
-                src: "./assets/images/juditpolgar.jpg"
+                src: require("@/assets/images/juditpolgar.jpg")
             },
             {
                 title: "Susan Polgar",
                 text: "Susan Polgar is the older sister of Judit Polgar, and one of chess�s most famous female players. Like her sisters, she was a chess prodigy and later went on to achieve many prestigious titles. For example, Susan Polgar was the first woman to earn the title of Grandmaster",
-                src: "./assets/images/susanpolgar.jpg"
+                src: require("@/assets/images/susanpolgar.jpg")
             },
             {
                 title: "Anna Rudolf",
@@ -39,7 +38,7 @@ export default {
             {
                 title: "Maya Chiburdanidze",
                 text: "Maya (also spelled Maia) Chiburdanidze is a Georgian grandmaster, and the only chess player in history to have won nine Chess Olympiads. In 1978, she won the Women�s World Chess Championship by defeating the reigning champion",
-                src: "./assets/images/maya.jpg"
+                src: require("@/assets/images/maya.jpg")
             },
             {
                 title: "Anna Muzychuk",
@@ -49,17 +48,17 @@ export default {
             {
                 title: "Rohini Khadilkar",
                 text: "Rohini Khadilkar is the youngest of the famous Khadilkar sisters. She won the Indian Women�s Chess Championship 5 times and went on to compete in the 1976 Indian Men�s Chess Championship.",
-                src: "./assets/images/rohini.jpg"
+                src: require("@/assets/images/rohini.jpg")
             },
             {
                 title: "Xie Jun",
                 text: "Xie Jun is the Chinese chess player who ended Maya Chiburdanidze�s 14 year long reign in 1991. She was the star that signalled China�s ascent into dominance in the field of women�s chess.",
-                src: "./assets/images/xiejun.jpg"
+                src: require("@/assets/images/xiejun.jpg")
             },
             {
                 title: "Vera Menchik",
                 text: "Vera Menchik is the original Women�s World Chess Champion, and the longest reigning champion to date. She dominated the first WWCC in 1927, and continued to do so in each of the 6 consecutive championships",
-                src: "./assets/images/vera.jpg"
+                src: require("@/assets/images/vera.jpg")
             },
             {
                 title: "Ana Matnazde",
@@ -72,4 +71,17 @@ export default {
 </script>
 
 <style lang="scss">
+$font: Helvetica;
+$color: #334166;
+html {
+  width: 75%;
+  margin: 0 auto;
+  font-family: $font
+}
+
+@media (max-width: 600px) {
+    html {
+      width: 100%;
+    }
+}
 </style>

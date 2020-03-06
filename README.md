@@ -20,5 +20,12 @@ npm run build
 npm run lint
 ```
 
+### Custom dependencies
+```
+sass-loader
+materialize-css
+node-sass
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
